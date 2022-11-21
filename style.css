@@ -1,0 +1,13 @@
+p{
+    display: inline;
+}
+
+div{
+    background-color: pink;
+
+    border-color: black;
+
+    border-style: dotted;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
