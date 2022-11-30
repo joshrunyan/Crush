@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
         <title>Joe Mama</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./Joe Mama_files/style.css">
 
-        <script src="functions.js"></script>
+        <script src="./Joe Mama_files/functions.js.download"></script>
 
     </head>
     <body>
@@ -15,7 +15,7 @@
 
             <div>
                 <label for="">Whats your name?</label>
-                <input type="text" name="joe" id = "joe">
+                <input type="text" name="joe" id="joe">
                 
             </div>
             
@@ -36,19 +36,19 @@
             <label for="">Does size matter?</label>
 
             <br>
-                <input type="radio" name="size" id="yes"  onclick="appear()">       <p>yes</p>
+                <input type="radio" name="size" id="yes" onclick="appear()">       <p>yes</p>
                 <br>
 
-                <input type="radio" class = "yaga" name="size2" id="size">       <p class = "yaga">yes</p>
+                <input type="radio" class="yaga" name="size2" id="size">       <p class="yaga">yes</p>
                 <br>
 
-                <input type="radio" class = "yaga" name="size2" id="size">       <p class = "yaga" >yes</p>
+                <input type="radio" class="yaga" name="size2" id="size">       <p class="yaga">yes</p>
                 <br>
 
-                <input type="radio" class = "yaga" name="size2" id="size">       <p class = "yaga">yes</p>
+                <input type="radio" class="yaga" name="size2" id="size">       <p class="yaga">yes</p>
                 <br>
 
-                <input type="radio" class = "yaga" name="size2" id="size">       <p class = "yaga">yes</p>
+                <input type="radio" class="yaga" name="size2" id="size">       <p class="yaga">yes</p>
                 <br>
 
                 <input type="radio" name="size">        <p>No</p>
@@ -98,7 +98,7 @@
                 <br>
                 <input type="radio" name="nerd" id="yea"><p>Yes</p>
                 <br>
-                <input type="radio" name="nerd"  id="nay" onclick="change()"><p>No</p>
+                <input type="radio" name="nerd" id="nay" onclick="change()"><p>No</p>
                 <br>
             </div>
             
@@ -108,19 +108,19 @@
                 <br>
                 <input type="radio" name="attractive"><p>1</p>
 
-                <img src="Images/giga.jpg" class = "men" alt="">
+                <img src="./Joe Mama_files/giga.jpg" class="men" alt="">
                 <br>
                 <input type="radio" name="attractive"><p>2</p>
 
-                <img src="Images/slappy.webp" class = "men"  alt="">
+                <img src="./Joe Mama_files/slappy.webp" class="men" alt="">
                 <br>
                 <input type="radio" name="attractive"><p>3</p>
 
-                <img src="Images/thanos.jpg" class = "men" alt="">
+                <img src="./Joe Mama_files/thanos.jpg" class="men" alt="">
                 <br>
                 <input type="radio" name="attractive"><p>4</p>
 
-                <img src="Images/weeb.jpg" class = "men" alt="">
+                <img src="./Joe Mama_files/weeb.jpg" class="men" alt="">
                 <br>
             </div>
             
@@ -141,11 +141,49 @@
            
 
            
-        </form>
+        
     </div>
 
 
-    </body>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
 
-</html>
+
+</body></html>
